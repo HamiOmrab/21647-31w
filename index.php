@@ -25,6 +25,10 @@
         body {
             background-color: aquagit;
         }
+
+        h1 {
+            
+        }
     </style>
 </head>
 <body>
