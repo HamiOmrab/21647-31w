@@ -14,24 +14,10 @@
 ?>
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon WP</title>
-    <style>
-        body {
-            background-color: aquagit;
-        }
 
-        h1 {
-            
-        }
-    </style>
-</head>
-<body>
+
+<?php get_header(); ?>
+
     <main>
         <?php
             if ( have_posts() ) :
@@ -43,5 +29,6 @@
             endif;
         ?>
     </main>
-</body>
+
+    <?php get_footer(); ?>  
 </html>

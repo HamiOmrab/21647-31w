@@ -48,7 +48,21 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Accessibility
 	- Alignments
 
---------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
 
 
-/* J'aimrais créer un commit comme test! */
+// Importation des variables.
+@import "variables/couleurs";
+@import "variables/structure";
+@import "variables/polices";
+
+
+// Importation normalize et box-sizing
+@import "generic/box-sizing";
+@import "generic/normalize";
+
+//Importation les éléments de base
+@import "base/body";
+@import "base/heading";
+
+
