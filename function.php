@@ -49,10 +49,9 @@ function underscore_setup() {
     	wp_enqueue_style( 'underscore-style', get_stylesheet_uri(), array(), _S_VERSION );
 
     	wp_enqueue_style( 'main_styles',
-							, get_template_directory_uri() . '/style.css', 
+							get_template_directory_uri() . '/style.css', 
 							array(), 
-							filetime(get_template_directory() . '/style.css'), 
-							false );
+							filetime(get_template_directory() . '/style.css'), false );
 
     }
     
