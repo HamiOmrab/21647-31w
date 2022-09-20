@@ -332,4 +332,8 @@ template {
 
 html {
   box-sizing: border-box;
-}/*# sourceMappingURL=style.css.map */
+}
+
+body {
+	background-color: rgb(233, 210, 169);
+  }/*# sourceMappingURL=style.css.map */
