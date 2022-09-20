@@ -336,4 +336,12 @@ html {
 
 body {
   background-color: rgb(236, 209, 163);
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }/*# sourceMappingURL=style.css.map */
