@@ -61,6 +61,6 @@ function underscore_scripts() {
 					 filemtime(get_template_directory() . '/style.css'), false);
 	
 }
-add_action( 'wp_enqueue_scripts', 'underscore_scripts' );
+add_action( 'wp_enqueue_scripts', 'underscore_scripts');
 
 
