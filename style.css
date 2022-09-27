@@ -338,6 +338,12 @@ body {
   background-color: rgb(236, 209, 163);
 }
 
+.trace {
+  padding-left: 10px;
+  color: rgb(6, 17, 39);
+  background-color: rgb(64, 189, 79);
+}
+
 h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
