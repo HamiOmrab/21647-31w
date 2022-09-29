@@ -1,1 +1,33 @@
-$couleur__background-body: rgb(236, 209, 163);
+$couleur__background--body: rgb(20, 168, 94);
+
+/*-----------------------------------------------Couleur d'arrière plan des titres */
+
+$couleur__background--h1: rgba(71, 139, 206, 0.888);
+$couleur__background--h2h3h4: rgba(74, 25, 126, 0.926);
+$couleur__background--h5h6: rgba(74, 25, 126, 0.926);
+$couleur__background--code: rgb(224, 47, 47);
+
+/*-----------------------------------------------Couleur des caractères (color: ) */
+
+/*-----------------------------------------------Couleur des lines (color: ) */
+
+$couleur__link: #55f;
+$couleur__link--visited: #3f3;
+$couleur__link--hover: #8f8;
+$couleur__background--code: #bbb;
+
+
+/*------------------------------------------------Couleur des boutons */
+$color__border--button: #999;
+$color__background--button: #bbb;
+$color__border--button-hover: #aaa;
+$color__border--button-focus: #888;
+
+/*------------------------------------------------Couleur des champs de texte (input fields) */
+$color__text-input: #444;
+$color__border--input:#777;;
+$color__text--input-focus: #333;
+
+/*------------------------------------------------Couleur des ligns horizontales (hr) */
+
+$color__background-hr: rgb(58, 22, 129);

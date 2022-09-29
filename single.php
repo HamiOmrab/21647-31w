@@ -36,7 +36,7 @@
                     <span> <?php the_author(); ?> </span>
                 </code>
                 <pre>
-                    <span> <?php the_category(); ?> </span>
+                    <span> <?php the_category("cours"); ?> </span>
                 </pre>
     <?php
             endwhile;

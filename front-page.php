@@ -14,7 +14,7 @@
  */
 ?>
 
-<h1 class="trace">front page</h1>
+<h1 class="trace">front2 page</h1>
 <?php get_header(); ?>
 
 <main>

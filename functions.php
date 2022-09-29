@@ -61,6 +61,15 @@ function underscore_scripts() {
 					 filemtime(get_template_directory() . '/style.css'), false);
 	
 }
+
+	function mon_31w_register_nav_menus() {
+		register_nav_menus( array(
+	    	'primary_menu' => __( 'Primary Menu', 'text_domain' )
+		) );
+	}
+
 add_action( 'wp_enqueue_scripts', 'underscore_scripts');
+
+
 
 
