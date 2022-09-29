@@ -1,16 +1,15 @@
-small {
-    background-color: $couleur__background--code;
-    margin-left: 10px;
-    
-}
-
-pre {
-    font-family: ;
-}
-
+small,
+pre,
 code {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: $couleur__background--code;
+  margin: 10px;
 }
-
-abbr, acronym
-
+pre {
+  font-family: "Courier New", Courier, monospace;
+}
+code {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+span {
+  margin: 0 10px;
+}

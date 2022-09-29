@@ -1,9 +1,16 @@
 body {
+    background-color : $couleur__background-body;
+} 
+
+main{
+    font-family: $police__main;
   background-color: $couleur__background--body;
 }
 
+main {
+  font-family: $police__main;
+}
+
 .trace {
-  padding-left: 10px;
-  color: rgb(6, 17, 39);
-  background-color: rgb(64, 189, 79);
+    background-color: #0f0;
 }
