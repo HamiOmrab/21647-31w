@@ -14,7 +14,7 @@
  */
 ?>
 
-<h1 class="trace">single page</h1>
+<h1 class="trace">Single page</h1>
 <?php get_header(); ?>
 
 <main>
