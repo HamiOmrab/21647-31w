@@ -1,14 +1,21 @@
 .menu-primaire-container {  //nav
+    background-color: #000;
+    
 
     .menu {  //ul 
         list-style-type: none;
+        display: flex;
+        justify-content: space-between;
     }
 
     .menu-item { //li 
     }
 
     a {            
-        
+        padding: 10px;
+        text-decoration: none;
+        background-color: #000;
+        color: #fff;
     }
 
 }
