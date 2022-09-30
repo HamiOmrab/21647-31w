@@ -9,6 +9,7 @@ a {
   &:focus,
   &:active {
     color: $couleur__link--hover;
+    background-color: $couleur__background__link--hover;
   }
 
   &:focus {
