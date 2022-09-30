@@ -30,5 +30,10 @@
 // .menu-primaire-container .menu-item {}
 // .menu-primaire-container a {}
 
-
+.menu-primaire-container a:hover {
+        color: rgb(8, 33, 113);
+        background-color: #fff;
+        outline: 3px solid rgb(8, 33, 113);
+        border-radius: 5px;
+}
 

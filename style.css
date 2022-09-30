@@ -554,4 +554,11 @@ dd {
   text-decoration: none;
   background-color: rgb(8, 33, 113);
   color: #fff;
+}
+
+.menu-primaire-container a:hover {
+  color: rgb(8, 33, 113);
+  background-color: #fff;
+  outline: 3px solid rgb(8, 33, 113);
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
