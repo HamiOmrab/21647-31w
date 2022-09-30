@@ -343,12 +343,12 @@ html {
 }
 
 body {
-  background-color: rgb(218, 232, 130);
+  background-color: rgb(240, 230, 114);
 }
 
 main {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: rgb(218, 232, 130);
+  background-color: rgb(240, 230, 114);
 }
 
 .trace {
@@ -397,7 +397,7 @@ a {
   color: #55f;
 }
 a:visited {
-  color: rgb(255, 51, 143);
+  color: rgb(81, 152, 65);
 }
 a:hover, a:focus, a:active {
   color: rgb(205, 217, 205);
