@@ -354,8 +354,8 @@ main {
 .trace {
   margin: 0;
   padding: 20px;
-  background-color: rgb(14, 69, 172);
-  color: rgb(245, 221, 190);
+  color: rgb(14, 69, 172);
+  background-color: rgb(245, 221, 190);
   text-align: center;
   font-size: 2rem;
   letter-spacing: 0.1rem;
