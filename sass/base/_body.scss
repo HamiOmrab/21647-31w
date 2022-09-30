@@ -1,5 +1,6 @@
 body {
     background-color : $couleur__background-body;
+    padding: 20px;
 } 
 
 main{
@@ -9,7 +10,7 @@ main{
 
 .trace {
     margin:0;
-    padding: 20px;
+    padding: 30px;
     color: rgb(14, 69, 172);
     background-color: rgb(245, 221, 190);
     text-align: center;
