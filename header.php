@@ -21,8 +21,8 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
+	<?php wp_body_open(); ?>
+	<div id="page" class="site">
 			<?php wp_nav_menu(array(
 			"menu" => "primaire",
 			"container" => "nav",
@@ -42,6 +42,11 @@
 
 	</header><!-- #masthead -->
 
-	<aside>
-			
+	<aside class="widget__area">
+			<h2>Menu Secondaire</h2>
+			<?php wp_nav_menu(array(
+						"menu" => "aside",
+						"container" => "nav",
+						"container_class" => "menu__aside"
+			)); ?>
 	</aside>
