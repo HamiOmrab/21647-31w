@@ -21,13 +21,18 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<?php wp_body_open(); ?>
 	<div id="page" class="site">
-			<?php wp_nav_menu(array(
-			"menu" => "primaire",
-			"container" => "nav",
-			"container_class" => "menu__principal"
-			)); ?>
+
+	<!-- ↓↓ Menu principal ↓↓ -->
+	<?php wp_body_open(); ?>
+	<?php wp_nav_menu(array(
+		"menu" => "primaire",
+		"container" => "nav",
+		"container_class" => "menu__principal"
+	)); ?>
+	<!-- ↑↑ Menu principal ↑↑ -->
+
+
 	<header id="masthead" class="site__header">
 		<div class="site__branding">
 			<h1 class="site__title">
@@ -39,9 +44,9 @@
 			<p class="site__description"><?php echo $underscore_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>	
 		</div><!-- .site-branding -->
-
+		
 	</header><!-- #masthead -->
-
+	
 	<aside class="widget__area">
 			<h2>Menu Secondaire</h2>
 			<?php wp_nav_menu(array(

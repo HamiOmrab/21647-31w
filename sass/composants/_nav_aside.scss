@@ -1,0 +1,40 @@
+.menu__aside {
+    display: flex;
+    margin-right: 20px;
+  
+    .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-item {
+        margin: 10px 0;
+        background-color:rgb(148, 177, 180, .6);
+    }
+
+    a {
+  color: $couleur__link__aside;
+
+  &:visited {
+    color: $couleur__link__aside--visited;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $couleur__link--hover;
+    background-color: $couleur__link__aside--hover;
+  }
+
+  &:focus {
+    outline: thin dotted;
+  }
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}
+
+}

@@ -20,6 +20,7 @@ Text Domain: underscore
 /*------------------------------------------------Couleur des champs de texte (input fields) */
 /*------------------------------------------------Couleur des ligns horizontales (hr) */
 /*------------------------------------------------Simple */
+/*-------------------------------------------------*/
 /* pre*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -567,6 +568,36 @@ dd {
   background-color: #fff;
   outline: 3px solid rgb(8, 33, 113);
   border-radius: 5px;
+}
+
+.menu__aside {
+  display: flex;
+  margin-right: 20px;
+}
+.menu__aside .menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu__aside .menu-item {
+  margin: 10px 0;
+  background-color: rgba(148, 177, 180, 0.6);
+}
+.menu__aside a {
+  color: rgb(16, 77, 52);
+}
+.menu__aside a:visited {
+  color: rgb(10, 10, 39);
+}
+.menu__aside a:hover, .menu__aside a:focus, .menu__aside a:active {
+  color: rgb(205, 217, 205);
+  background-color: rgb(40, 102, 143);
+}
+.menu__aside a:focus {
+  outline: thin dotted;
+}
+.menu__aside a:hover, .menu__aside a:active {
+  outline: 0;
 }
 
 .site {
