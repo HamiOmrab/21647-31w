@@ -343,13 +343,13 @@ html {
 }
 
 body {
-  background-color: rgb(222, 211, 84);
+  background-color: #FFB703;
   padding: 20px;
 }
 
 main {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: rgb(222, 211, 84);
+  background-color: #FFB703;
 }
 
 .trace {
@@ -537,27 +537,32 @@ dd {
   margin: 0 1.5em 1.5em;
 }
 
-.menu-primaire-container {
+.menu__principal {
   background-color: rgb(41, 36, 193);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 4rem;
+  flex: 1;
 }
-.menu-primaire-container .menu {
-  padding: 30px 0;
+.menu__principal .menu {
   list-style-type: none;
   display: flex;
-  justify-content: space-evenly;
   align-content: center;
+  justify-content: space-evenly;
+  margin: 50px 0;
 }
-.menu-primaire-container .menu-item {
+.menu__principal .menu-item {
   border-inline: 1px rgb(150, 182, 44);
 }
-.menu-primaire-container a {
+.menu__principal a {
   padding: 10px;
   text-decoration: none;
   background-color: rgb(8, 33, 113);
   color: #fff;
 }
 
-.menu-primaire-container a:hover {
+.menu__principal a:hover {
   color: rgb(8, 33, 113);
   background-color: #fff;
   outline: 3px solid rgb(8, 33, 113);

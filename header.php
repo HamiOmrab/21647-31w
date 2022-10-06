@@ -28,16 +28,20 @@
 			"container" => "nav",
 			"container_class" => "menu__principal"
 			)); ?>
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<h1 class="site-title">
+	<header id="masthead" class="site__header">
+		<div class="site__branding">
+			<h1 class="site__title">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 			</h1>
 		<?php
 			$underscore_description = get_bloginfo( 'description', 'display' );
 			if ( $underscore_description || is_customize_preview() ) : ?>
-			<p class="site-description"><?php echo $underscore_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+			<p class="site__description"><?php echo $underscore_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>	
 		</div><!-- .site-branding -->
 
 	</header><!-- #masthead -->
+
+	<aside>
+			
+	</aside>
