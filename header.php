@@ -23,6 +23,11 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
+			<?php wp_nav_menu(array(
+			"menu" => "primaire",
+			"container" => "nav",
+			"container_class" => "menu__principal"
+			)); ?>
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<h1 class="site-title">
@@ -34,7 +39,5 @@
 			<p class="site-description"><?php echo $underscore_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>	
 		</div><!-- .site-branding -->
-		<?php wp_nav_menu(array(
-			"menu" => "primaire",
-			"container" => "nav")); ?>
+
 	</header><!-- #masthead -->
