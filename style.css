@@ -570,7 +570,6 @@ dd {
   margin: 50px 0;
 }
 .menu__principal .menu-item {
-  border-inline: 1px rgb(150, 182, 44);
   background-color: #219ebc;
 }
 .menu__principal a {
@@ -578,7 +577,7 @@ dd {
   text-decoration: none;
   background-color: #219ebc;
   color: beige;
-  font-size: 20px;
+  font-size: clamp(0.5rem, 1vw, 1.5rem);
 }
 
 .menu__principal a:hover {
@@ -591,7 +590,7 @@ dd {
 .menu__aside {
   display: flex;
   margin-right: 20px;
-  background-color: #FB8500;
+  background-color: #FFB703;
 }
 .menu__aside .menu {
   list-style-type: none;
@@ -599,8 +598,9 @@ dd {
   padding: 0;
 }
 .menu__aside .menu-item {
-  margin: 10px 0;
-  background-color: rgba(148, 177, 180, 0.6);
+  margin: 10px;
+  padding: 5px;
+  background-color: #8ECAE6;
 }
 .menu__aside a {
   color: rgb(16, 77, 52);

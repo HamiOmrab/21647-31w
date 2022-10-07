@@ -20,7 +20,6 @@
     }
     
     .menu-item { //li 
-        border-inline: 1px rgb(150, 182, 44);
         background-color: #219ebc;
     }
     
@@ -29,7 +28,7 @@
         text-decoration: none;
         background-color: #219ebc;
         color: beige;
-        font-size: 20px;
+        font-size: clamp(.5rem, 1vw, 1.5rem);
     }
     
 }
