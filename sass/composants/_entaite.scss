@@ -11,5 +11,8 @@
 }
 
 .site__description {
+    text-align: center;
 
+        font-size: clamp(1.5rem, 2vw, 5rem);
+        color: #ae2012;
 }
