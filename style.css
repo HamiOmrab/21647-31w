@@ -13,14 +13,17 @@ License URI: LICENSE
 Text Domain: underscore
 */
 /* -------------------------------------------------------------- */
+/* ----------------------------------- Couleur d'arrière plan body */
+/* ----------------------------------- Couleur d'arrière plan de main */
 /* ----------------------------------- Couleur d'arrière plan titres */
-/* --------------------------------------- couleur   color :  */
+/* --------------------------------------- couleur de heading  */
 /* --------------------- Couleurs des liens */
 /*------------------------------------------------Couleur des boutons */
 /*------------------------------------------------Couleur des champs de texte (input fields) */
 /*------------------------------------------------Couleur des ligns horizontales (hr) */
 /*------------------------------------------------Simple */
-/*-------------------------------------------------*/
+/*-------------------------------------------------aside*/
+/*-------------------------------------------------site__title*/
 /* pre*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -344,13 +347,15 @@ html {
 }
 
 body {
-  background-color: #FFB703;
-  padding: 20px;
+  background-color: #FB8500;
+  background-color: #fb8500;
 }
 
 main {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #FFB703;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #ffb703;
+  padding: 0 30px 0 20px;
+  text-align: justify;
 }
 
 .trace {
@@ -369,7 +374,8 @@ a {
 }
 
 h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(0.9rem, 2vw, 2.5rem);
 }
 
 h2, h3, h4, h5, h6 {
@@ -566,14 +572,15 @@ dd {
   list-style-type: none;
   display: flex;
   align-content: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  gap: 50px;
   margin: 50px 0;
 }
 .menu__principal .menu-item {
   background-color: #219ebc;
 }
 .menu__principal a {
-  padding: 10px;
+  padding: 5px;
   text-decoration: none;
   background-color: #219ebc;
   color: beige;
@@ -589,8 +596,7 @@ dd {
 
 .menu__aside {
   display: flex;
-  margin-right: 20px;
-  background-color: #FFB703;
+  margin: 20px;
 }
 .menu__aside .menu {
   list-style-type: none;
@@ -619,6 +625,14 @@ dd {
   outline: 0;
 }
 
+.site__title {
+  font-size: clamp(2rem, 4vw, 4rem);
+  text-align: center;
+}
+.site__title a {
+  color: #219ebc;
+}
+
 .site__header {
   grid-area: header;
 }
@@ -644,7 +658,7 @@ dd {
 @media screen and (min-width: 700px) {
   .site {
     display: grid;
-    grid-template-columns: 25% auto;
+    grid-template-columns: 20% auto;
     grid-template-areas: "header header" "sidebar main" "footer footer";
   }
 }/*# sourceMappingURL=style.css.map */

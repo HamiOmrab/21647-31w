@@ -1,12 +1,17 @@
+/* ----------------------------------- Couleur d'arrière plan body */
 $couleur__background-body: #FB8500;
-$couleur__background-body: #FFB703;
+
+/* ----------------------------------- Couleur d'arrière plan de main */
+$couleur__background-main: #ffb703;
+
+
 /* ----------------------------------- Couleur d'arrière plan titres */
 $couleur__background--h1: rgba(233, 237, 248, 0.971);
 $couleur__background--h2h3h4: rgb(215, 215, 231);
 $couleur__background--h5h6: rgb(154, 153, 172);
 $couleur__background--code: rgb(213, 208, 230);
 
-/* --------------------------------------- couleur   color :  */
+/* --------------------------------------- couleur de heading  */
 $couleur__h1: rgba(25, 41, 88, 0.971);
 $couleur__h2h3h4: rgb(16, 12, 114);
 $couleur__h5h6: rgb(16, 12, 114);
@@ -39,9 +44,16 @@ $color__background-hr: rgb(58, 22, 129);
 $color__background--pre: rgb(87, 69, 124);
 
 
-/*-------------------------------------------------*/
+/*-------------------------------------------------aside*/
 $couleur__link__aside: rgb(16, 77, 52);
 $couleur__link__aside--visited: rgb(10, 10, 39);
 $couleur__link__aside--hover: rgb(40, 102, 143);
+
+
+/*-------------------------------------------------site__title*/
+// $couleur__site__title: #fb8500;
+$couleur__site__title: #219ebc;
+
+
 
 

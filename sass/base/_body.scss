@@ -1,11 +1,13 @@
 body {
     background-color : $couleur__background-body;
-    padding: 20px;
+    background-color: #fb8500;
 } 
 
 main{
     font-family: $police__main;
-    background-color: $couleur__background-body;
+    background-color: $couleur__background-main;
+    padding: 0 30px 0 20px;
+    text-align: justify;
 }
 
 .trace {
