@@ -403,12 +403,28 @@ a:visited {
 }
 a:hover, a:focus, a:active {
   color: rgb(205, 217, 205);
-  background-color: rgb(63, 48, 197);
 }
 a:focus {
   outline: thin dotted;
 }
 a:hover, a:active {
+  outline: 0;
+}
+
+/* ------------------------------------------------  .menu__aside  */
+.menu__aside a {
+  color: rgb(16, 77, 52);
+}
+.menu__aside a:visited {
+  color: rgb(10, 10, 39);
+}
+.menu__aside a:hover, .menu__aside a:focus, .menu__aside a:active {
+  color: rgb(40, 102, 143);
+}
+.menu__aside a:focus {
+  outline: thin dotted;
+}
+.menu__aside a:hover, .menu__aside a:active {
   outline: 0;
 }
 
@@ -539,11 +555,11 @@ dd {
 }
 
 .menu__principal {
-  background-color: rgb(41, 36, 193);
+  background-color: #023047;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 4rem;
+  height: 4em;
   flex: 1;
 }
 .menu__principal .menu {
@@ -555,13 +571,14 @@ dd {
 }
 .menu__principal .menu-item {
   border-inline: 1px rgb(150, 182, 44);
+  background-color: #219ebc;
 }
 .menu__principal a {
   padding: 10px;
   text-decoration: none;
-  background-color: #8ECAE6;
-  color: #fff;
-  font-size: 1.3rem;
+  background-color: #219ebc;
+  color: beige;
+  font-size: 20px;
 }
 
 .menu__principal a:hover {
@@ -574,6 +591,7 @@ dd {
 .menu__aside {
   display: flex;
   margin-right: 20px;
+  background-color: #FB8500;
 }
 .menu__aside .menu {
   list-style-type: none;
@@ -601,31 +619,32 @@ dd {
   outline: 0;
 }
 
-.site {
-  display: grid;
-  grid-template-columns: 25% auto;
-  grid-template-areas: "header header" "sidebar main" "footer footer";
-}
-
-.site-header {
+.site__header {
   grid-area: header;
 }
 
-.site-main {
+.site__main {
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
-.widget-area {
+.widget__area {
   grid-area: sidebar;
 }
 
-.site-footer {
+.site__footer {
   grid-area: footer;
 }
 
-.no-sidebar .site {
+.site {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "sidebar" "header" "main" "footer";
+}
+@media screen and (min-width: 700px) {
+  .site {
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
 }/*# sourceMappingURL=style.css.map */

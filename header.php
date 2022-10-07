@@ -31,12 +31,13 @@ _____________________________________________ -->
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<?php wp_nav_menu(array(
+
+	<header id="masthead" class="site__header">
+			<?php wp_nav_menu(array(
 		"menu" => "primaire",
 		"container" => "nav",
 		"container_class" => "menu__principal"
 	)); ?>
-	<header id="masthead" class="site__header">
 		<div class="site__branding">
 			<h1 class="site__title">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>

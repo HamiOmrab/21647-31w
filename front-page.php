@@ -14,10 +14,12 @@
  */
 ?>
 
-<h1 class="trace">Front page</h1>
-<?php get_header(); ?>
 
-<main class="site__main">
+<!-- h1 class="trace">front-page.php</h1 -->
+<?php get_header(); ?>
+<!-- h1 class="trace">front-page.php</h1 -->
+
+    <main class="site__main">
     <?php
 		if ( have_posts() ) :
             while ( have_posts() ) :
