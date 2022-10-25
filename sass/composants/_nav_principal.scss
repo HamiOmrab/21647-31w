@@ -1,14 +1,11 @@
 .menu__principal {  //nav
-    background-color: #023047;
+    background-color: #7ec7ed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 4em;
     flex: 1;
-    
-    
-    
-    
+       
     
     .menu {  //ul 
         list-style-type: none;
@@ -22,14 +19,14 @@
     }
     
     .menu-item { //li 
-        background-color: #219ebc;
+        background-color: #1b4f8b;
     }
     
     a {            
-        padding: 5px;
+        padding: 10px 5px;
         text-decoration: none;
-        background-color: #219ebc;
-        color: beige;
+        background-color: #021D58;
+        color: #DD9A42;
         font-size: clamp(.5rem, 1vw, 1.5rem);
     }
     
@@ -43,7 +40,5 @@
 .menu__principal a:hover {
         color: rgb(8, 33, 113);
         background-color: #fff;
-        outline: 3px solid rgb(8, 33, 113);
-        border-radius: 5px;
 }
 

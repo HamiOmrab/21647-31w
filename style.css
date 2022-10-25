@@ -347,12 +347,12 @@ html {
 }
 
 body {
-  background-color: #f2e181;
+  background-color: #e2dfd2;
 }
 
 main {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: #eacb7e;
+  background-color: #ddcda7;
   padding: 0 30px 0 20px;
   text-align: justify;
   border: 2px solid #023047;
@@ -429,13 +429,13 @@ a:hover, a:active {
 
 /* ------------------------------------------------  .menu__aside  */
 .menu__aside a {
-  color: rgb(169, 237, 209);
+  color: rgb(229, 240, 235);
 }
 .menu__aside a:visited {
   color: rgb(10, 10, 39);
 }
 .menu__aside a:hover, .menu__aside a:focus, .menu__aside a:active {
-  color: rgb(49, 160, 234);
+  color: rgb(56, 165, 238);
 }
 .menu__aside a:focus {
   outline: thin dotted;
@@ -571,7 +571,7 @@ dd {
 }
 
 .menu__principal {
-  background-color: #023047;
+  background-color: #7ec7ed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -587,21 +587,19 @@ dd {
   margin: 50px 0;
 }
 .menu__principal .menu-item {
-  background-color: #219ebc;
+  background-color: #1b4f8b;
 }
 .menu__principal a {
-  padding: 5px;
+  padding: 10px 5px;
   text-decoration: none;
-  background-color: #219ebc;
-  color: beige;
+  background-color: #021D58;
+  color: #DD9A42;
   font-size: clamp(0.5rem, 1vw, 1.5rem);
 }
 
 .menu__principal a:hover {
   color: rgb(8, 33, 113);
   background-color: #fff;
-  outline: 3px solid rgb(8, 33, 113);
-  border-radius: 5px;
 }
 
 .menu__aside {
@@ -616,17 +614,17 @@ dd {
 .menu__aside .menu-item {
   margin: 10px;
   padding: 5px;
-  background-color: #8ECAE6;
+  background-color: #171e22;
 }
 .menu__aside a {
-  color: rgb(169, 237, 209);
+  color: rgb(229, 240, 235);
 }
 .menu__aside a:visited {
   color: rgb(10, 10, 39);
 }
 .menu__aside a:hover, .menu__aside a:focus, .menu__aside a:active {
   color: rgb(205, 217, 205);
-  background-color: rgb(49, 160, 234);
+  background-color: rgb(56, 165, 238);
 }
 .menu__aside a:focus {
   outline: thin dotted;
@@ -640,13 +638,13 @@ dd {
   text-align: center;
 }
 .site__title a {
-  color: #8fdaed;
+  color: #030520;
 }
 
 .site__description {
   text-align: center;
   font-size: clamp(1.5rem, 2vw, 5rem);
-  color: #ae2012;
+  color: #2118ca;
 }
 
 .site__footer {
@@ -658,7 +656,7 @@ dd {
 .site__footer div {
   flex: 1;
   width: 20%;
-  border: 1px dotted green;
+  border: 1px dotted rgb(31, 36, 31);
 }
 
 .site__footer div > div {
