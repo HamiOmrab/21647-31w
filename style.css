@@ -656,7 +656,8 @@ dd {
 .site__footer div {
   flex: 1;
   width: 20%;
-  border: 1px dotted rgb(31, 36, 31);
+  border: 1px dotted rgb(130, 132, 130);
+  align-items: center;
 }
 
 .site__footer div > div {
