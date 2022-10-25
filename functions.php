@@ -98,6 +98,7 @@ function igc31w_filtre_choix_menu($obj_menu){
 add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu");
 
 /**----------------------------------------------------------------------------------------------- */
+add_action( 'widgets_init', 'my_register_sidebars' );
 function my_register_sidebars() {
 	/* Register the 'primary' sidebar. */
 	register_sidebar(
@@ -113,9 +114,3 @@ function my_register_sidebars() {
 	);
 	/* Repeat register_sidebar() code for additional sidebars. */
 }
-
-
-
-
-
-
