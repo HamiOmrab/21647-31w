@@ -347,12 +347,12 @@ html {
 }
 
 body {
-  background-color: #FB8500;
+  background-color: #f2e181;
 }
 
 main {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: #ffb703;
+  background-color: #eacb7e;
   padding: 0 30px 0 20px;
   text-align: justify;
   border: 2px solid #023047;
@@ -415,7 +415,7 @@ a {
   color: #55f;
 }
 a:visited {
-  color: rgb(81, 152, 65);
+  color: rgb(91, 116, 85);
 }
 a:hover, a:focus, a:active {
   color: rgb(205, 217, 205);
@@ -429,13 +429,13 @@ a:hover, a:active {
 
 /* ------------------------------------------------  .menu__aside  */
 .menu__aside a {
-  color: rgb(16, 77, 52);
+  color: rgb(169, 237, 209);
 }
 .menu__aside a:visited {
   color: rgb(10, 10, 39);
 }
 .menu__aside a:hover, .menu__aside a:focus, .menu__aside a:active {
-  color: rgb(40, 102, 143);
+  color: rgb(49, 160, 234);
 }
 .menu__aside a:focus {
   outline: thin dotted;
@@ -521,7 +521,7 @@ textarea {
 }
 
 hr {
-  background-color: rgb(58, 22, 129);
+  background-color: rgb(220, 110, 161);
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
@@ -619,14 +619,14 @@ dd {
   background-color: #8ECAE6;
 }
 .menu__aside a {
-  color: rgb(16, 77, 52);
+  color: rgb(169, 237, 209);
 }
 .menu__aside a:visited {
   color: rgb(10, 10, 39);
 }
 .menu__aside a:hover, .menu__aside a:focus, .menu__aside a:active {
   color: rgb(205, 217, 205);
-  background-color: rgb(40, 102, 143);
+  background-color: rgb(49, 160, 234);
 }
 .menu__aside a:focus {
   outline: thin dotted;
@@ -640,7 +640,7 @@ dd {
   text-align: center;
 }
 .site__title a {
-  color: #219ebc;
+  color: #8fdaed;
 }
 
 .site__description {
