@@ -658,19 +658,34 @@ dd {
 .site__footer {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   gap: 4%;
+  background-color: #7EC7ED;
+  color: white;
 }
 
 .site__footer div {
   flex: 1;
-  width: 20%;
-  border: 1px dotted rgb(130, 132, 130);
-  align-items: center;
 }
 
+.site__footer li {
+  list-style-type: none;
+  margin-bottom: 5px;
+
+}
+
+.site__footer  a {
+    color: white;
+}
+
+.site__footer  a:hover {
+    color: #DD9A42;
+    background-color: #021D58;
+}
 .site__footer div > div {
   width: 100%;
 }
+
 
 .site__header {
   grid-area: header;
