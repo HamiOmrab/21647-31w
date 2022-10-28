@@ -97,9 +97,6 @@ function igc31w_filtre_choix_menu($obj_menu){
 }
 add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu");
 
-
-
-
 /**----------------------------------------------------------------------Initialisation des sidebar */
 add_action( 'widgets_init', 'my_register_sidebars' );
 function my_register_sidebars() {
