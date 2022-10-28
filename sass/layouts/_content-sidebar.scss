@@ -16,7 +16,11 @@
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
-.widget__area {
+.widget__area-1 {
+	grid-area: sidebar;
+}
+
+.widget__area-2 {
 	grid-area: sidebar;
 }
 
