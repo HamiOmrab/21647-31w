@@ -26,7 +26,7 @@
             endwhile;
         endif;
     ?>    
-    </main>    
+    </main> 
 <?php get_footer(); ?>
 </html>
 

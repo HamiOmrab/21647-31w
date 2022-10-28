@@ -97,27 +97,38 @@ function igc31w_filtre_choix_menu($obj_menu){
 }
 add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu");
 
-// /**----------------------------------------------------------------------Initialisation des sidebar */
-// add_action( 'widgets_init', 'my_register_sidebars' );
-// function my_register_sidebars() {
-// 	/* Register the 'footer-1' sidebar. */
-// 	register_sidebar(
-// 		array(
-// 			'id'            => 'primary',
-// 			'name'          => __( 'Primary Sidebar' ),
-// 			'description'   => __( 'A short description of the sidebar.' ),
-// 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-// 			'after_widget'  => '</div>',
-// 			'before_title'  => '<h3 class="widget-title">',
-// 			'after_title'   => '</h3>',
-// 		)
-// 	);
-// 	/* Repeat register_sidebar() code for additional sidebars. */
-// }
+
+
 
 /**----------------------------------------------------------------------Initialisation des sidebar */
 add_action( 'widgets_init', 'my_register_sidebars' );
 function my_register_sidebars() {
+
+	/* Register the 'aside widget1 */
+	register_sidebar(
+		array(
+			'id'            => 'aside-1',
+			'name'          => __( 'Sidebar - aside-1' ),
+			'description'   => __( 'Premiere widget de l\'aside' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+
+	/* Register the 'aside widget2 */
+	register_sidebar(
+		array(
+			'id'            => 'aside-2',
+			'name'          => __( 'Sidebar - aside-2' ),
+			'description'   => __( 'Deuxieme widget de l\'aside' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
 	/* Register the 'footer-1' sidebar. */
 	register_sidebar(
 		array(
