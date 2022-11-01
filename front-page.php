@@ -27,7 +27,7 @@
     ?>
     <h1><a href="<?php the_permalink(); ?>">
     <?php the_title(); ?> </a></h1>
-    <h2> Durée du cours <?php the_field('durée'); ?></h2>
+    <h2> Durée du cours: <?= the_field('duree')."h"; ?></h2>
 
     <?php the_content(null, true); ?>
     
