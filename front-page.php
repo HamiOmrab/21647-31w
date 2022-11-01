@@ -25,7 +25,10 @@
             while ( have_posts() ) :
 				the_post();
     ?>
-    <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?> </a></h1>
+    <h1><a href="<?php the_permalink(); ?>">
+    <?php the_title(); ?> </a></h1>
+    <h2> Durée du cours <?php the_field('durée'); ?></h2>
+
     <?php the_content(null, true); ?>
     
     <?php endwhile;
