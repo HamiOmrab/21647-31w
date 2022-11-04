@@ -61,41 +61,42 @@ function underscore_scripts() {
 					 filemtime(get_template_directory() . '/style.css'), false);
 	
 }
+add_action( 'wp_enqueue_scripts', 'underscore_scripts' );
 
-
-add_action( 'wp_enqueue_scripts', 'underscore_scripts');
 
 /* ----------------------------------------- Initialisation de la fonction de menu */
+
 function mon_31w_register_nav_menu(){
 	register_nav_menus( array(
 		'menu_primaire' => __( 'Menu Primaire', 'text_domain' ),
-
+	
 	) );
 }
-
 add_action( 'after_setup_theme', 'mon_31w_register_nav_menu', 0 );
 
 
-/* --------------------------------------------- pour filtre chacun des élément du menu */
-function igc31w_filtre_choix_menu($obj_menu){
-    //var_dump($obj_menu);
-	//die();
+/**
+ * filtre le menu «aside»
+ * @arg  $obj_menu, $arg
+ */
 
+
+function igc31w_filtre_choix_menu($obj_menu, $arg){
+
+ 
+    if ($arg->menu == "aside"){
     foreach($obj_menu as $cle => $value)
     {
-        //print_r($value);
 
-       //$value->title = substr($value->title,0,7);
-       $value->title = wp_trim_words($value->title,3,"...");
-       // echo $value->title . '<br>';
-
+       $value->title = substr($value->title,7);
+	   $value->title = substr($value->title,0,strpos($value->title, '('));
+       $value->title = wp_trim_words($value->title,3," ... ");
+     } 
     }
-
-	//die();
     return $obj_menu;
-
 }
-add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu");
+
+add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu", 10,2);
 
 /**----------------------------------------------------------------------Initialisation des sidebar */
 add_action( 'widgets_init', 'my_register_sidebars' );
