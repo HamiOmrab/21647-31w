@@ -53,8 +53,9 @@ _____________________________________________ -->
 
 	<!-- <aside class="widget__area-1"> -->
 	<aside class="site__menu">
-			<h2>Menu Secondaire</h2>
-			<?php wp_nav_menu(array(
+		<input type="checkbox" name="chk-burger" id="chk-burger" class="chk-burger">
+		<label class="burger" for="chk-burger">&#11135;</label>
+		<?php wp_nav_menu(array(
 						"menu" => "aside",
 						"container" => "nav",
 						"container_class" => "menu__aside"
