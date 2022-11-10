@@ -1,4 +1,6 @@
-.menu__evenement {}
+.menu__evenement {
+
+}
 
 .menu__evenement .menu { //ul
     display: flex;
@@ -8,6 +10,16 @@
     border: 1px solid #bbb;
 }
 
-.menu__evenement .menu-item  {
+.menu__evenement .menu-item  { //li
     width: 25%
+}
+
+.evenement__porte {
+    background-color: aqua;
+}
+.evenement__stage {
+    background-color: rgb(55, 0, 255);
+}
+.evenement__projet {
+    background-color: aqua;
 }

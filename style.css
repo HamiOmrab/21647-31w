@@ -638,7 +638,7 @@ dd {
     /* important de revenir à width 100%  pour remplacer le 100vw*/
     width: 100%;
   }
-}
+
 .menu__aside .menu {
   list-style-type: none;
   margin: 0;

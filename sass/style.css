@@ -641,7 +641,7 @@ dd {
   transition: transform 0.5s;
   background-color: #000;
 }
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 700px) {
   .menu__aside {
     position: static;
     transform: translateX(0);
@@ -686,6 +686,18 @@ dd {
 
 .menu__evenement .menu-item {
   width: 25%;
+}
+
+.evenement__porte {
+  background-color: aqua;
+}
+
+.evenement__stage {
+  background-color: rgb(55, 0, 255);
+}
+
+.evenement__projet {
+  background-color: aqua;
 }
 
 .site__title {
