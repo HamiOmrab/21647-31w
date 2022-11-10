@@ -676,6 +676,18 @@ dd {
   outline: 0;
 }
 
+.menu__evenement .menu {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 25%;
+  border: 1px solid #bbb;
+}
+
+.menu__evenement .menu-item {
+  width: 25%;
+}
+
 .site__title {
   font-size: clamp(2rem, 4vw, 4rem);
   text-align: center;

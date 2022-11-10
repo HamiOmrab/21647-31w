@@ -1,0 +1,13 @@
+.menu__evenement {}
+
+.menu__evenement .menu { //ul
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 25%;
+    border: 1px solid #bbb;
+}
+
+.menu__evenement .menu-item  {
+    width: 25%
+}
