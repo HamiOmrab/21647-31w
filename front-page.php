@@ -1,32 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@HamiOmrab 
-eddytuto
-/
-21647-31w
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-21647-31w/front-page.php /
-@eddypmartin
-eddypmartin c15-Début du de l'exercice #3. Liste des cours avec category-cours.ph…
-…
-Latest commit 76281af 7 minutes ago
- History
- 1 contributor
-40 lines (29 sloc)  926 Bytes
-
-
 <?php
 /**
  * The main template file
@@ -45,6 +16,13 @@ Latest commit 76281af 7 minutes ago
 <?php get_header(); ?>
 
     <main class="site__main">
+    <?php
+        wp_nav_menu(array( 
+            "menu" => "evenement",
+            "container" => "nav",
+            "container_class" => "menu__evenement"
+        ));
+    ?>
     <?php
 		if ( have_posts() ) :
             while ( have_posts() ) :
