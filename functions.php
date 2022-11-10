@@ -204,3 +204,16 @@ function my_register_sidebars() {
 		)
 	);
 }
+
+/**
+ *
+ *	La fonction permettre de modifier la reqête principale de wordpress (main query)
+ *	Les articls qui s'afficheront dans la page d'acceuil seront les article de catégorie
+ *
+ */
+function wpdocs_exclude_category( $query ) {
+	if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
+		$query->set( 'category_name', 'halloween' );
+	}
+}
+add_action( 'pre_get_posts', 'wpdocs_exclude_category' );

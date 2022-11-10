@@ -22,20 +22,21 @@ category-cours.php
 <?php get_header(); ?>
 
     <main class="site__main">
-    <?php
-		if ( have_posts() ) :
-            while ( have_posts() ) :
-				the_post(); ?>
-                <h1><a href="<?php the_permalink(); ?>">
-                <?php the_title(); ?></a></h1>
-                <h2 class="dureeCours">Durée du cours:<?= the_field('duree')."h "; ?></h2>
-                <h2 class="titreCours">Titre du cours: <?= the_field('titre'); ?></h2>
-
-                <?php the_content(null, true); ?>
-
-            <?php endwhile; ?>
-        <?php endif; ?>
-
+        <section>
+        <?php
+		    if ( have_posts() ) :
+                while ( have_posts() ) :
+		    		the_post(); ?>
+                    <article class="liste__cours">
+                    <h1><a href="<?php the_permalink(); ?>">
+                    <?php the_title(); ?></a></h1>
+                    <h2 class="dureeCours">Durée du cours:<?= the_field('duree')."h "; ?></h2>
+                    <h2 class="titreCours">Titre du cours: <?= the_field('titre'); ?></h2>
+                    <?php the_content(null, true); ?>
+                    </article>
+                <?php endwhile; ?>
+            <?php endif; ?>
+        </section>
     </main>    
 <?php get_footer(); ?>
 </html>

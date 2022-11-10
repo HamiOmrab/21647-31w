@@ -635,7 +635,6 @@ dd {
   display: flex;
   margin: 20px;
   position: absolute;
-  width: 100vw;
   top: 70px;
   transform: translateX(-100vw);
   transition: transform 0.5s;
@@ -700,6 +699,12 @@ dd {
   background-color: aqua;
 }
 
+.menu-item_icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+}
+
 .site__title {
   font-size: clamp(2rem, 4vw, 4rem);
   text-align: center;
@@ -729,6 +734,16 @@ dd {
 
 .site__footer div > div {
   width: 100%;
+}
+
+.liste {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.list__cours {
+  flex: 0 1 20%;
 }
 
 .site__header {
