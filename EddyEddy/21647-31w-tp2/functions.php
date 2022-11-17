@@ -23,7 +23,10 @@ function underscore_setup() {
 		*/
 	add_theme_support( 'title-tag' );
 
-	/** -------------------------------- */	
+	add_theme_support( 'custom-logo', array(
+		'height' => 480,
+		'width'  => 720,
+	) );
 
 
     /*
