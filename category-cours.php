@@ -32,7 +32,9 @@ category-cours.php
                     <?php the_title(); ?></a></h1>
                     <h2 class="dureeCours">Durée du cours:<?= the_field('duree')."h "; ?></h2>
                     <h2 class="titreCours">Titre du cours: <?= the_field('titre'); ?></h2>
-                    <?php the_content(null, true); ?>
+                    <?php the_content(null, true);
+                    //wp_trim_words();
+                    ?>
                     </article>
                 <?php endwhile; ?>
             <?php endif; ?>
