@@ -28,6 +28,7 @@ function underscore_setup() {
 		'width'  => 720,
 	) );
 
+	add_theme_support( 'post-thumbnails' );
 
     /*
 		* Switch default core markup for search form, comment form, and comments
