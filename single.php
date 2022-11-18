@@ -13,36 +13,35 @@
  * @package underscore
  */
 ?>
-
-<!-- <h1 class="trace">Single page</h1> -->
+<h1 class="trace">single.php</h1>
 <?php get_header(); ?>
 
-<main>
+    <main class="site__main">
     <?php
 		if ( have_posts() ) :
             while ( have_posts() ) :
 				the_post(); 
-                the_title('<h1>','</h1>');
-                the_content(null, true);
-    ?>
+                the_title('<h2>','</h2>');
+                the_content(null, true);?>
                 <section>
                     <small>
-                    <span> <?php the_weekday(); ?> </span>
-                    <span> <?php the_date(); ?>    </span>
-                    <span> <?php the_time(); ?>    </span>
-                    </small>       
+                        <span><?php the_weekday(); ?></span> 
+                        <span><?php the_date(); ?></span> 
+                        <span><?php the_time(); ?></span>  
+                    </small>
+                    <code><?php the_author(); ?></code>
+                    <pre><?php the_category(); ?></pre>
                 </section>
-                <code>
-                    <span> <?php the_author(); ?> </span>
-                </code>
-                <pre>
-                    <span> <?php the_category("cours"); ?> </span>
-                </pre>
-    <?php
+                <?php 
+               
+               
+                
+               
             endwhile;
         endif;
     ?>    
-    </main>    
+    </main>  
+  
 <?php get_footer(); ?>
 </html>
 

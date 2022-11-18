@@ -3,28 +3,24 @@
 	grid-template-columns: auto ($size__site-sidebar);
 	grid-template-areas:
 		"header header"
-		"sidebar main"
+		"main sidebar"
 		"footer footer";
 }
 
-.site__header {
+.site-header {
 	grid-area: header;
 }
 
-.site__main {
+.site-main {
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
-.widget__area-1 {
+.widget-area {
 	grid-area: sidebar;
 }
 
-.widget__area-2 {
-	grid-area: sidebar;
-}
-
-.site__footer {
+.site-footer {
 	grid-area: footer;
 }
 

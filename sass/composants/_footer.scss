@@ -1,16 +1,8 @@
 .site__footer {
-    display: flex;
-    justify-content: space-around;
-    gap:4%;
+  display: flex;
+  justify-content: space-around;
 }
-.site__footer div{
-    flex: 1;
-    width: 20%;
-    border: 1px dotted rgb(130, 132, 130);
-    align-items: center;
-}
-
-
-.site__footer div>div {
-    width: 100%;
+.site__footer div {
+  flex: 1;
+  border: 1px solid #aaa;
 }
