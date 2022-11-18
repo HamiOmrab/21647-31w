@@ -1,11 +1,11 @@
 @charset "UTF-8";
 /*!
-Theme Name: ho_A22-31W
+Theme Name: hamidOmran_A22-31W
 Theme URI: http://underscores.me/
 Author: Hamid Omranabasi
-Author URI: http://Referenced.ca
+Author URI: https://prom5.sg-host.com/
 Description: Thème de base
-Version: 1.0.0
+Version: 1.0.2
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -96,7 +96,7 @@ a {
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-abbr[title] {
+ abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
@@ -375,15 +375,23 @@ a {
   text-decoration: none;
 }
 
-.widget__area {
+.widget__area-1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-top: 20px;
   border: 2px solid #023047;
   border-right: 1px solid #023047;
 }
 
+.widget__area-1 h2{
+  text-align: center;
+}
+
+.widget__area-2>*{
+  margin-top: 30px;
+  align-items: flex-start;
+  padding: 5px;
+}
 h1 {
   font-family: "Times New Roman", Times, serif;
   font-size: clamp(0.9rem, 2vw, 2.5rem);
@@ -442,6 +450,23 @@ a:hover, a:active {
   outline: thin dotted;
 }
 .menu__aside a:hover, .menu__aside a:active {
+  outline: 0;
+}
+
+/* ---------------------------------------------------------- Titre principal du site */
+.site__title a {
+  color: rgb(8, 52, 117);
+}
+.site__title a:visited {
+  color: rgb(11, 52, 100);
+}
+.site__title a:hover, .site__title a:focus, .site__title a:active {
+  color: rgb(38, 74, 114);
+}
+.site__title a:focus {
+  outline: thin dotted;
+}
+.site__title a:hover, .site__title a:active {
   outline: 0;
 }
 
@@ -522,26 +547,10 @@ textarea {
 }
 
 hr {
-  background-color: rgb(220, 110, 161);
+  background-color: rgb(161, 180, 213);
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
-}
-
-/* Make sure embeds and iframes fit their containers. */
-embed,
-iframe,
-object {
-  max-width: 100%;
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-}
-
-figure {
-  margin: 1em 0;
 }
 
 ul,
@@ -571,38 +580,51 @@ dd {
   margin: 0 1.5em 1.5em;
 }
 
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+  max-width: 100%;
+}
+
+figure {
+  margin: 1em 0;
+}
+
 .menu__principal {
-  background-color: #7ec7ed;
+  background-color: #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 4em;
-  flex: 1;
+  margin: 0;
 }
 .menu__principal .menu {
   list-style-type: none;
   display: flex;
-  align-content: center;
-  justify-content: flex-start;
-  gap: 50px;
-  margin: 50px 0;
-}
-.menu__principal .menu-item {
-  background-color: #1b4f8b;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
 }
 .menu__principal a {
-  padding: 10px 5px;
+  display: block;
   text-decoration: none;
-  background-color: #021D58;
-  color: #DD9A42;
-  font-size: clamp(0.5rem, 1vw, 1.5rem);
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
 }
-
 .menu__principal a:hover {
-  color: rgb(8, 33, 113);
-  background-color: #fff;
+  background-color: #555;
 }
 
+/* transformation en CSS */
 .site__menu {
   position: relative;
 }
@@ -633,14 +655,14 @@ dd {
 
 .menu__aside {
   display: flex;
-  margin: 20px;
   position: absolute;
+  width: 100vw;
   top: 70px;
   transform: translateX(-100vw);
   transition: transform 0.5s;
   background-color: #000;
 }
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 700px) {
   .menu__aside {
     position: static;
     transform: translateX(0);
@@ -650,36 +672,24 @@ dd {
 }
 .menu__aside .menu {
   list-style-type: none;
-  margin: 0;
   padding: 0;
-}
-.menu__aside .menu-item {
-  margin: 10px;
-  padding: 5px;
-  background-color: #171e22;
+  margin: 0;
 }
 .menu__aside a {
-  color: rgb(229, 240, 235);
-}
-.menu__aside a:visited {
-  color: rgb(10, 10, 39);
-}
-.menu__aside a:hover, .menu__aside a:focus, .menu__aside a:active {
-  color: rgb(205, 217, 205);
-  background-color: rgb(56, 165, 238);
-}
-.menu__aside a:focus {
-  outline: thin dotted;
-}
-.menu__aside a:hover, .menu__aside a:active {
-  outline: 0;
+  text-decoration: none;
+  padding: 5px 3px;
 }
 
+/*
+.menu__aside{}
+.menu__aside .menu {}
+.menu__aside .menu-item {}
+.menu__aside a {}
+*/
 .menu__evenement .menu {
+  list-style-type: none;
   display: flex;
   justify-content: space-around;
-  list-style-type: none;
-  width: 25%;
   border: 1px solid #bbb;
 }
 
@@ -687,53 +697,44 @@ dd {
   width: 25%;
 }
 
-.evenement__porte {
-  background-color: aqua;
+.menu__evenement .menu-item a {
+  text-decoration: none;
 }
 
-.evenement__stage {
-  background-color: rgb(55, 0, 255);
+.menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.evenement__porte {
+  background-color: aquamarine;
 }
 
 .evenement__projet {
-  background-color: aqua;
+  background-color: rgb(127, 153, 255);
 }
 
-.menu-item_icon {
+.evenement__stage {
+  background-color: rgb(255, 255, 127);
+}
+
+.menu__item__icone {
   width: 50px;
   height: 50px;
-  border: 1px solid red;
+  border: 1px solid #aaa;
 }
 
 .site__title {
-  font-size: clamp(2rem, 4vw, 4rem);
-  text-align: center;
-}
-.site__title a {
-  color: #030520;
-}
-
-.site__description {
-  text-align: center;
-  font-size: clamp(1.5rem, 2vw, 5rem);
-  color: #2118ca;
+  font-size: clamp(2rem, 4vw, 5rem);
 }
 
 .site__footer {
   display: flex;
   justify-content: space-around;
-  gap: 4%;
 }
 
 .site__footer div {
   flex: 1;
-  width: 20%;
-  border: 1px dotted rgb(130, 132, 130);
-  align-items: center;
-}
-
-.site__footer div > div {
-  width: 100%;
+  border: 1px solid #aaa;
 }
 
 .liste {
@@ -742,35 +743,28 @@ dd {
   flex-wrap: wrap;
 }
 
-.list__cours {
-  flex: 0 1 20%;
-}
-
 .site__header {
   grid-area: header;
+  background-color: #ddd;
 }
 
 .site__main {
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+  background-color: #ccc;
 }
 
 .site__menu {
-  grid-area: sidebar-1;
+  grid-area: menu;
 }
 
 .site__sidebar {
-  grid-area: sidebar-2;
+  grid-area: sidebar;
 }
 
 .site__footer {
   grid-area: footer;
-}
-
-.no-sidebar .site {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-areas: "header" "main" "footer";
+  background-color: #000;
 }
 
 .site {
@@ -780,7 +774,7 @@ dd {
 }
 @media screen and (min-width: 700px) {
   .site {
-    grid-template-columns: 20% auto;
-    grid-template-areas: "header header" "sidebar main" "sidebar main" ". main" "footer footer";
+    grid-template-columns: 25% auto;
+    grid-template-areas: "header header" "menu main" "sidebar main" ". main" "footer footer";
   }
 }/*# sourceMappingURL=style.css.map */

@@ -26,10 +26,11 @@
                 <h1><a href="<?php the_permalink(); ?>">
                 <?php the_title(); ?></a></h1>
                 <h2>Durée du cours: <?php the_field('duree'); ?></h2>
-                <?php the_content(null, true); 
-                //wp_trim_words()
+                <?= 
+                    // the_content(null, false); 
+                    wp_trim_words(get_the_excerpt(),50," ... ");
                 ?>
-              
+
                 <article>
                 
             <?php endwhile; ?>
