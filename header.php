@@ -36,10 +36,17 @@
 			"container_class" => "menu__principal")); ?>
 
 		<div class="site__branding">
+	
 		<?= get_custom_logo(); ?>
+		<div class="header_widget">
+				<div><?php get_sidebar( 'header-1' ); ?></div>
+				<div><?php get_sidebar( 'header-2' ); ?></div>
+			</div>
 			<h1 class="site__title">
+
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-			</h1>
+					</h1>
+
 		<?php
 			$underscore_description = get_bloginfo( 'description', 'display' );
 			if ( $underscore_description || is_customize_preview() ) : ?>
@@ -62,7 +69,7 @@
 		?>
 	</aside>
 	<aside class="site__sidebar">
-<div><?php get_sidebar( 'aside-1' ); ?></div>
-<div><?php get_sidebar( 'aside-2' ); ?></div>
+		<div><?php get_sidebar( 'aside-1' ); ?></div>
+		<div><?php get_sidebar( 'aside-2' ); ?></div>
 	</aside>
 
