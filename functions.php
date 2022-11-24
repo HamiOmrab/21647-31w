@@ -216,8 +216,8 @@ function my_register_sidebars() {
 	);
 	register_sidebar(
 		array(
-			'id'            => 'Sidebar - header-1',
-			'name'          => __( 'header-1' ),
+			'id'            => 'header-1',
+			'name'          => __( 'Sidebar - header-1' ),
 			'description'   => __( 'Quatrième sidebar du header' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
