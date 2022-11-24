@@ -35,13 +35,15 @@
 			"container" => "nav",
 			"container_class" => "menu__principal")); ?>
 		
+
+		<div class="site__branding">
+	
+		<?= get_custom_logo(); ?>
+
 		<div class="header_widget">
 				<div><?php get_sidebar( 'header-1' ); ?></div>
 				<div><?php get_sidebar( 'header-2' ); ?></div>
 			</div>
-		<div class="site__branding">
-	
-		<?= get_custom_logo(); ?>
 
 			<h1 class="site__title">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
