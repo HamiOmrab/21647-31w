@@ -782,11 +782,6 @@ figure {
   justify-content: space-around;
 }
 
-.site__footer div {
-  flex: 1;
-  border: 1px solid #aaa;
-}
-
 .liste {
   display: flex;
   justify-content: space-between;
@@ -821,7 +816,36 @@ figure {
 
 .site__footer {
   grid-area: footer;
-  background-color: #000;
+  background-color: #0c1425;
+  color: #DD9A42;
+  display: flex;
+  justify-content: space-around;
+  gap: 4%;
+}
+
+.site__footer div {
+  flex: 1;
+  /* border: 1px dotted rgb(130, 132, 130); */
+  align-items: center;
+}
+
+.site__footer li  {
+  list-style: none;
+}
+
+.site__footer li a {
+  padding: 5px 0;
+  color: #DD9A42;
+  list-style: none;
+}
+
+.site__footer>div {
+  display: flex;
+  align-content: center;
+  border: 1px dotted #DD9A42;
+}
+.wp-block-image {
+  border: none;
 }
 
 .site {
